@@ -1,6 +1,6 @@
 # VCSR-MC vs rocSPARSE on AMD MI300A
 
-VCSR-MC SpMM (sparse A * dense B = dense C) on AMD MI300A
+VCSR-MC SpMM (sparse A * dense B = dense C) on AMD MI300A GPU
 
 ## 1. Get the matrices
 
@@ -52,5 +52,5 @@ src/vcsr_mc.cu               the VCSR-MC kernels (FP16, FP32) and format constru
 src/kernels.cu               the hipSPARSE baseline (FP32 and FP16)
 src/main.cpp                 driver: runs, times and validates the kernels
 include/                     Matrix Market reader, CSR, format struct
-reference/vcsr_tc.cu         the original CUDA kernel (unmodified, MIT; not built)
+reference/vcsr_tc.cu         VCSR-TC (Tensor Core CUDA)
 ```

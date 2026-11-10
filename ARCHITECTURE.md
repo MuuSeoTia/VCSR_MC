@@ -120,7 +120,7 @@ the best per matrix.
 
 ## Settings: segment width S and output tile T_k
 
-Both are template parameters chosen at run time.
+Both are template parameters chosen at run time based on vcsr-tc
 
 | Setting | Flag | Supported values | Constraint |
 |---|---|---|---|
@@ -196,8 +196,6 @@ FP32 needs T_k <= 32 (49,536 B). Adding a value means updating the checks in
    the first step.
 
 ## Proposal: CLI flags and documentation
-
-Nothing below is implemented yet.
 
 | Command | Today | Proposed |
 |---|---|---|
